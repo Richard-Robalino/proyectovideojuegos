@@ -4,6 +4,10 @@
 
 import express from "express";
 import router from "./routers/game_routes.js";
+import cors from "cors";
+app.use(cors());
+import dotenv from "dotenv";
+dotenv.config();
 
 
 // Inicializaciones
