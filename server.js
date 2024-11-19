@@ -1,6 +1,6 @@
 import express from "express";
-<<<<<<< HEAD
-import router from "./routers/game_routes.js";
+
+import router from "./src/routers/game_routes.js";
 import cors from "cors";
 app.use(cors());
 import dotenv from "dotenv";
@@ -8,8 +8,7 @@ dotenv.config();
 
 
 // Inicializaciones
-=======
->>>>>>> ad108be6f1c135417be444da8ef17bad354e81eb
+
 const app = express();
 
 app.set("port", process.env.PORT || 3000);
