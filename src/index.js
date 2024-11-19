@@ -1,6 +1,5 @@
 //el punto de arranque de todo el web server
-import app from "../server.js";
-
+import app from "./src/server.js";
 export default async function handler(req, res) {
     await app(req, res);
 }
