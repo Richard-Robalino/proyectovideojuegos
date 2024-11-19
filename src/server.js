@@ -1,8 +1,5 @@
-//Configuraciones para el servidor
-// Requerir módulos
-//importamos express
-
 import express from "express";
+<<<<<<< HEAD
 import router from "./routers/game_routes.js";
 import cors from "cors";
 app.use(cors());
@@ -11,20 +8,16 @@ dotenv.config();
 
 
 // Inicializaciones
+=======
+>>>>>>> ad108be6f1c135417be444da8ef17bad354e81eb
 const app = express();
 
-// Variables
 app.set("port", process.env.PORT || 3000);
 
-//Middlewares
-app.use(express.json());
-
-//Rutas
+// Configura tus rutas aquí
 app.get("/", (req, res) => {
-    res.send("Server ON");
+    res.send("Hola, este es el servidor Superchachiguachi");
 });
-app.use("/api",router);
 
-//exportar la variable app
+// Exporta `app` en lugar de iniciar el servidor
 export default app;
-
