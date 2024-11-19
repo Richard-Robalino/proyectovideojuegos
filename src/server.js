@@ -1,26 +1,12 @@
-//Configuraciones para el servidor
-// Requerir módulos
-//importamos express
-
 import express from "express";
-import router from "./routers/game_routes.js";
-
-
-// Inicializaciones
 const app = express();
 
-// Variables
 app.set("port", process.env.PORT || 3000);
 
-//Middlewares
-app.use(express.json());
-
-//Rutas
+// Configura tus rutas aquí
 app.get("/", (req, res) => {
-    res.send("Server ON");
+    res.send("Hola, este es el servidor Superchachiguachi");
 });
-app.use("/api",router);
 
-//exportar la variable app
+// Exporta `app` en lugar de iniciar el servidor
 export default app;
-
